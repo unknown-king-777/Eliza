@@ -19,7 +19,7 @@ module.exports = {
     longDescription: {
       en: "View command usage and list all commands directly",
     },
-    category: "𝗜𝗡𝗙𝗢",
+    category: "info",
     guide: {
       en: "{pn} / help cmdName ",
     },

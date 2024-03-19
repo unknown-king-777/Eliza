@@ -1,3 +1,4 @@
+
 const moment = require('moment-timezone');
 
 module.exports = {
@@ -5,7 +6,7 @@ module.exports = {
     name: "uptime",
     aliases: ["upt","ms"],
     version: "1.0",
-    author: "Fahim ", 
+    author: "Fahim & Upol - Modified by Sahadat", 
     role: 0,
     shortDescription: {
       en: ""
@@ -42,8 +43,8 @@ module.exports = {
     const minutes = Math.floor((uptime % 3600) / 60);
     const seconds = Math.floor(uptime % 60);
     let currentDate = moment().tz('Asia/Dhaka').format('YYYY-MM-DD hh:mm:ss A'); // Format in 12-hour with AM/PM
-    const uptimeString = ${hours}h ${minutes}m ${seconds}s;
+    const uptimeString = `${hours}h ${minutes}m ${seconds}s`;
 
-    await api.sendMessage(Malta Ai Bot Current Speed: ${ping} ms.\nSpeed Status: ${pingStatus}\n\nUptime: ${uptimeString}\nDate: ${currentDate}, event.threadID);
+    await api.sendMessage(`Malta Ai Bot Current Speed: ${ping} ms.\nSpeed Status: ${pingStatus}\n\nUptime: ${uptimeString}\nDate: ${currentDate}`, event.threadID);
   }
 };

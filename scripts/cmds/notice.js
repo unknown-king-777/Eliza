@@ -27,7 +27,7 @@ module.exports = {
     
     en: {
       missingMessage: "Please enter the message you want to send to all groups",
-      notification: "     << 𝗡𝗢𝗧𝗜𝗖𝗘 >>     ",
+      notification: "     << 𝗔𝗗𝗠𝗜𝗡 𝗡𝗢𝗧𝗜𝗖𝗘 >>     ",
       sendingNotification: "Start sending notification from admin bot to %1 chat groups",
       sentNotification: "✅ Sent notification to %1 groups successfully",
       errorSendingNotification: "An error occurred while sending to %1 groups:\n%2"
@@ -39,7 +39,7 @@ module.exports = {
     if (!args[0])
       return message.reply(getLang("missingMessage"));
     const formSend = {
-      body: `${getLang("notification")}\n━━━━━━━━━━━━━━━━━━━\n${args.join(" ")} \n━━━━━━━━━━━━━━━━━━━\n~ 𝗔𝗗𝗠𝗜𝗡 𝗣𝗔𝗡𝗘𝗟 : 𝗔𝗟𝗜𝗧𝗘 𝗡𝗘𝗧𝗪𝗢𝗥𝗞 𝗧𝗘𝗔𝗠 , 𝗕𝗗🥀`,
+      body: `${getLang("notification")}\n━━━━━━━━━━━━━━━━━━━\n${args.join(" ")} \n━━━━━━━━━━━━━━━━━━━\n~ 𝗔𝗟𝗜𝗧𝗘 𝗡𝗘𝗧𝗪𝗢𝗥𝗞 𝗧𝗘𝗔𝗠 , 𝗕𝗗.`,
       attachment: await getStreamsFromAttachment(
         [
           ...event.attachments,

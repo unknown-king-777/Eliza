@@ -5,7 +5,7 @@ module.exports = {
     name: "uptime",
     aliases: ["upt","ms"],
     version: "1.0",
-    author: "Fahim & Upol - Modified by Sahadat", 
+    author: "Fahim ", 
     role: 0,
     shortDescription: {
       en: ""
@@ -13,7 +13,7 @@ module.exports = {
     longDescription: {
       en: ""
     },
-    category: "𝗦𝗬𝗦𝗧𝗘𝗠",
+    category: "system",
     guide: {
       en: ""
     }

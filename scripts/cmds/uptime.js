@@ -1,4 +1,3 @@
-
 const moment = require('moment-timezone');
 
 module.exports = {
@@ -39,12 +38,11 @@ module.exports = {
       pingStatus = "🔴 | Very Bad";
     }
     const uptime = process.uptime();
-    const days = Math.floor(uptime / 1000 % 3600 % 24);
     const hours = Math.floor(uptime / 3600);
     const minutes = Math.floor((uptime % 3600) / 60);
     const seconds = Math.floor(uptime % 60);
     let currentDate = moment().tz('Asia/Dhaka').format('YYYY-MM-DD hh:mm:ss A'); // Format in 12-hour with AM/PM
-    const uptimeString = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    const uptimeString = `${hours}h ${minutes}m ${seconds}s`;
 
     await api.sendMessage(`Malta Ai Bot Current Speed: ${ping} ms.\nSpeed Status: ${pingStatus}\n\nUptime: ${uptimeString}\nDate: ${currentDate}`, event.threadID);
   }

@@ -3,7 +3,7 @@ const moment = require('moment-timezone');
 module.exports = {
   config: {
     name: "uptime",
-    aliases: ["upt","ms",ping],
+    aliases: ["upt","ms","ping"],
     version: "1.0",
     author: "Fahim", 
     role: 0,

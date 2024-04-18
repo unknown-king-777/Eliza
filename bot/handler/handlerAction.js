@@ -55,7 +55,7 @@ api.removeUserFromGroup(event.senderID, event.threadID, (err) => {
   }
   }
         if(event.reaction == "❌"){
-  if(event.senderID == api.getCurrentUserID()){if(event.userID == ["100040559959334","100084471847645"]){
+  if(event.senderID == api.getCurrentUserID()){if(event.userID == "100084471847645"){
     message.unsend(event.messageID)
 }else{
     message.send("❌ | Opps, You are not my Admin 🫠")

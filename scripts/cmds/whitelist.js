@@ -9,7 +9,7 @@ module.exports = {
     name: "whitelist",
     aliases: [],
     version: "0.1",
-    author: "Fahim", //upol author change koiro na 😓
+    author: "Fahim",
     countDown: 5,
     role: 2,
 
